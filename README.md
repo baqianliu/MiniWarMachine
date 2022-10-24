@@ -1,4 +1,5 @@
-> 本项目是Arize项目的第一个项目，motor的控制项目，提供interface供外部控制motor
+> 本项目是Arize为了使用波士顿的API创建的demo项目
+> 目前包含motor的控制，其中会提供PAI供外部控制motor
 
 [toc]
 
