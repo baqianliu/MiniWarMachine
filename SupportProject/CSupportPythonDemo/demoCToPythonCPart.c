@@ -5,7 +5,7 @@
 typedef struct
 {
     PyObject_HEAD
-        int id;
+    int id;
     PyObject *username;
     int age;
     PyObject *address;
@@ -107,24 +107,29 @@ static PyObject *User_user_info(UserObject *self, PyObject *Py_UNUSED(ignored))
         return NULL;
     }
 
-    // if (self->address == NULL)
-    // {
-    //     PyErr_SetString(PyExc_AttributeError, "address");
-    //     return NULL;
-    // }
+    //if (self->address == NULL)
+    //{
+    //    PyErr_SetString(PyExc_AttributeError, "address");
+    //    return NULL;
+    //}
 
     return PyUnicode_FromFormat("%d %S %d %S", self->id, self->username, self->age, self->address);
 }
 
+static PyObject *UserRun(UserObject *self, PyObject *Py_UNUSED(ignored))
+{
+    return PyUnicode_FromFormat("%S run in %S", self->username, self->address);
+}
+
 static PyMethodDef User_methods[] = {
-    {"user_info", (PyCFunction)User_user_info, METH_NOARGS,
-     "this fuction will display."},
+    {"user_info", (PyCFunction)User_user_info, METH_NOARGS, "this fuction will display."},
+    {"run", (PyCFunction)UserRun, METH_NOARGS, "this fuction will display."},
     {NULL} /* Sentinel */
 };
 
 static PyTypeObject UserType = {
     PyVarObject_HEAD_INIT(NULL, 0)
-        .tp_name = "demoCToPythonCPart.User",
+    .tp_name = "demoCToPythonCPart.User",
     .tp_doc = "This text will be displayed in the class documentation.",
     .tp_basicsize = sizeof(UserObject),
     .tp_itemsize = 0,
