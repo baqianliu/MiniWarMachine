@@ -1,4 +1,4 @@
-> 模块化机器人控制项目，第一台原型机名为赤星，希望可以在机器人大赛上获取名次
+> 模块化机器人控制项目，第一台原型机名为先锋官-赤星，希望可以在机器人大赛上获取名次
 > 可以参考远程医疗机器人
 
 [toc]
@@ -11,6 +11,7 @@
 * 支持自动运行和多种方式的手动控制，主要手动控制方式为AR或者键鼠方式，实时图像+现实增强+体感控制
 * 支持机器人动作的录入与回放，一键便可以精确执行录入过的动作
 * 有现场控制版本(不通过屏幕控制)，可以加装头部远程控制模块升级为可远程控制版本
+* 支持集群控制，一脑多从
 
 ## 目录结构
 * DOC 存放相关文档
@@ -88,6 +89,6 @@
 * [GVN系列高性能多轴网络运动控制卡](http://www.googoltech.com.cn/pro_view-92.html#:~:text=%E9%AB%98%E9%80%9FgLink-,%E6%BF%80%E5%85%89%E5%8A%A0%E5%B7%A5%E7%AD%89%E8%A1%8C%E4%B8%9A%E3%80%82)
 * [工业4.0智能制造通信协议](https://blog.csdn.net/Yilingsi_M/article/details/128136233)
 * https://github.com/mit-biomimetics/Cheetah-Software
-* 
+* [机器人OS的选择](https://zhuanlan.zhihu.com/p/500130466)
 ## 学习链接
 * 现代机器人学：https://hades.mech.northwestern.edu/index.php/Modern_Robotics
