@@ -70,3 +70,6 @@
 /Source/Arize/MDK-ARM/DebugConfig/Arize_STM32F103C8_1.0.0.dbgconf
 /Source/Arize/Middlewares/Third_Party/FreeRTOS/Source/readme.txt
 /Source/Arize/Middlewares/Third_Party/FreeRTOS/Source/st_readme.txt
+/Tools/DownloadPrograming/FlyMcu.exe
+/Tools/DownloadPrograming/FlyMcuConfig.ini
+/Tools/DownloadPrograming/ProgramLogs.txt
